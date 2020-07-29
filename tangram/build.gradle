@@ -24,27 +24,31 @@
 
 apply plugin: 'com.android.library'
 
-buildscript {
-    repositories {
-        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-        maven { url "http://oss.jfrog.org/oss-snapshot-local/" }
-        mavenCentral()
-        jcenter()
-        maven { url 'https://maven.google.com' }
-    }
+//buildscript {
+//    repositories {
+//        google()
+//        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+//        jcenter { url "http://jcenter.bintray.com/"}
+//        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+//        maven { url "http://oss.jfrog.org/oss-snapshot-local/" }
+//        mavenCentral()
+//        maven { url 'https://maven.google.com' }
+//    }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
-    }
-}
-
-repositories {
-    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-    maven { url "http://oss.jfrog.org/oss-snapshot-local/" }
-    jcenter()
-    mavenLocal()
-    maven { url 'https://maven.google.com' }
-}
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:2.3.0'
+//    }
+//}
+//
+//repositories {
+//    google()
+//    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+//    jcenter { url "http://jcenter.bintray.com/"}
+//    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+//    maven { url "http://oss.jfrog.org/oss-snapshot-local/" }
+//    mavenLocal()
+//    maven { url 'https://maven.google.com' }
+//}
 
 ext {
     bintrayRepo = 'Tangram'
@@ -56,8 +60,8 @@ ext {
 
     libraryDescription = 'Tangram is a modular UI solution for building native page dynamically including Tangram for Android, Tangram for iOS and even backend CMS. This project provides the sdk on Android.'
 
-    siteUrl = 'https://github.com/alibaba/Tangram-Android'
-    gitUrl = 'https://github.com/alibaba/Tangram-Android.git'
+    siteUrl = 'https://github.com/yeild-android/Tangram-Android'
+    gitUrl = 'https://github.com/yeild-android/Tangram-Android.git'
 
     libraryVersion = project.hasProperty('VERSION_NAME') ? VERSION_NAME : ''
 
@@ -75,7 +79,7 @@ def VERSION_NAME = System.properties['versionName'] ?: '0.1.0'
 
 android {
     compileSdkVersion Integer.parseInt(System.properties['compileSdkVersion'] ?: '26')
-    buildToolsVersion System.properties['buildToolsVersion'] ?: '26.0.2'
+//    buildToolsVersion System.properties['buildToolsVersion'] ?: '26.0.2'
 
     defaultConfig {
         minSdkVersion 14
@@ -85,8 +89,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     buildTypes {
@@ -97,46 +101,49 @@ android {
     }
 
     lintOptions {
+        checkReleaseBuilds false
         abortOnError false
     }
 
 }
 
-configurations.all {
-    // check for updates every build
-    resolutionStrategy.cacheChangingModulesFor 60, 'seconds'
-}
+//configurations.all {
+//    // check for updates every build
+//    resolutionStrategy.cacheChangingModulesFor 60, 'seconds'
+//}
 
 
 dependencies {
     if (project.hasProperty('vlayoutDevMode')) {
         println 'compile with vlayout source code'
-        compile(project(':vlayout')) {
+        api(project(':vlayout')) {
             exclude group: 'com.android.support', module: 'recyclerview-v7'
             exclude group: 'com.android.support', module: 'support-v4'
             exclude group: 'com.android.support', module: 'support-annotations'
         }
     } else {
-        compile('com.alibaba.android:vlayout:1.2.32@aar') {
+        api('com.alibaba.android:vlayout:1.2.32@aar') {
+            println 'compile with vlayout lib'
             changing = true
         }
     }
 
-    provided 'io.reactivex.rxjava2:rxjava:2.1.12'
-    provided 'io.reactivex.rxjava2:rxandroid:2.0.2'
-    compile 'com.android.support:recyclerview-v7:26.0.2'
-    compile 'com.android.support:support-v4:26.0.2'
-    compile 'com.android.support:support-annotations:26.0.2'
-    compile 'com.alibaba:fastjson:1.1.54.android@jar'
+    api 'com.google.android.material:material:1.1.0'
+    api 'androidx.recyclerview:recyclerview:1.1.0'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+    compileOnly 'io.reactivex.rxjava2:rxjava:2.1.12'
+    compileOnly 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.alibaba:fastjson:1.1.54.android@jar'
     if (project.hasProperty('ultraViewPagerDevMode')) {
         println 'compile with ultraViewPager source code'
-        compile project(':ultraviewpager')
+        api project(':ultraviewpager')
     } else {
-        compile 'com.alibaba.android:ultraviewpager:1.0.7.8@aar'
+        api 'com.alibaba.android:ultraviewpager:1.0.7.8@aar'
     }
     if (project.hasProperty('virtualViewDevMode')) {
         println 'compile with virtualview source code'
-        compile(project(':virtualview')) {
+        api(project(':virtualview')) {
 
             exclude group: 'com.android.support', module: 'appcompat'
             exclude group: 'com.android.support', module: 'appcompat-v7'
@@ -145,7 +152,7 @@ dependencies {
             exclude group: 'com.android.support', module: 'support-annotations'
         }
     } else {
-        compile('com.alibaba.android:virtualview:1.4.3@aar') {
+        api('com.alibaba.android:virtualview:1.4.3@aar') {
             transitive true
             exclude group: 'com.android.support', module: 'appcompat'
             exclude group: 'com.android.support', module: 'appcompat-v7'
@@ -157,17 +164,17 @@ dependencies {
     }
 }
 
-File deployConfig = rootProject.file('jcenterInstall.gradle')
-if (deployConfig.exists()) {
-    apply from: rootProject.file('jcenterInstall.gradle')
-}
-
-deployConfig = rootProject.file('jcenterDeploy.gradle')
-if (deployConfig.exists()) {
-    apply from: rootProject.file('jcenterDeploy.gradle')
-}
-
-deployConfig = rootProject.file('deploy.gradle')
-if (deployConfig.exists()) {
-    apply from: rootProject.file('deploy.gradle')
-}
+//File deployConfig = rootProject.file('jcenterInstall.gradle')
+//if (deployConfig.exists()) {
+//    apply from: rootProject.file('jcenterInstall.gradle')
+//}
+//
+//deployConfig = rootProject.file('jcenterDeploy.gradle')
+//if (deployConfig.exists()) {
+//    apply from: rootProject.file('jcenterDeploy.gradle')
+//}
+//
+//deployConfig = rootProject.file('deploy.gradle')
+//if (deployConfig.exists()) {
+//    apply from: rootProject.file('deploy.gradle')
+//}

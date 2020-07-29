@@ -25,7 +25,7 @@
 package com.tmall.wireless.tangram3.structure;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;

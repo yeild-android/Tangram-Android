@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram3.support.async;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.tmall.wireless.tangram3.dataparser.concrete.Card;
 import com.tmall.wireless.tangram3.structure.BaseCell;

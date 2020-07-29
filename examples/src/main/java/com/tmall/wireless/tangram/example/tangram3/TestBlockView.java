@@ -25,12 +25,12 @@
 package com.tmall.wireless.tangram.example.tangram3;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
 import com.tmall.wireless.tangram.example.R;
 import com.tmall.wireless.tangram.example.support.SampleScrollSupport;
 import com.tmall.wireless.tangram3.structure.BaseCell;

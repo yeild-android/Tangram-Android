@@ -24,10 +24,10 @@
 
 package com.tmall.wireless.tangram3.structure.cell;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseIntArray;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.RecyclerView;
 import com.alibaba.android.vlayout.RecyclablePagerAdapter;
 import com.alibaba.android.vlayout.VirtualLayoutManager.LayoutParams;
 import com.alibaba.fastjson.JSONObject;

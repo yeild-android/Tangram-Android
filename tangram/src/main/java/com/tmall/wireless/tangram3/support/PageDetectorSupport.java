@@ -28,7 +28,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.tmall.wireless.tangram3.TangramEngine;
 import com.tmall.wireless.tangram3.structure.BaseCell;

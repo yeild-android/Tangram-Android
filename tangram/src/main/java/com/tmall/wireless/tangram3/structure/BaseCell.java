@@ -24,11 +24,12 @@
 
 package com.tmall.wireless.tangram3.structure;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.alibaba.fastjson.JSONObject;
 import com.tmall.wireless.tangram3.Engine;

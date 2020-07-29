@@ -31,8 +31,8 @@ import java.util.Map;
 
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.Keep;
-import android.support.annotation.NonNull;
+import androidx.annotation.Keep;
+import androidx.annotation.NonNull;
 import com.tmall.wireless.tangram.support.TimerSupport.OnTickListener;
 
 public class HandlerTimer implements Runnable, ITimer {

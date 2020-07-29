@@ -24,9 +24,9 @@
 
 package com.tmall.wireless.tangram3.core.adapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.RecyclerView;
 /**
  * Created by villadora on 15/12/15.
  */

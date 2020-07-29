@@ -25,9 +25,9 @@
 package com.tmall.wireless.tangram3.structure.cell;
 
 import android.graphics.Color;
-import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.RecyclerView;
 import com.tmall.wireless.tangram.core.R;
 import com.tmall.wireless.tangram3.core.adapter.BinderViewHolder;
 import com.tmall.wireless.tangram3.core.adapter.GroupBasicAdapter;

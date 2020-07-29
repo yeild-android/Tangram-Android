@@ -1,7 +1,6 @@
 package com.tmall.wireless.tangram.example.support;
 
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.OnScrollListener;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +18,7 @@ public class SampleScrollSupport {
 
     public SampleScrollSupport(RecyclerView recyclerView) {
         this.recyclerView = recyclerView;
-        recyclerView.addOnScrollListener(new OnScrollListener() {
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 for (IScrollListener listener : scrollListeners) {

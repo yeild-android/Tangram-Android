@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram.dataparser.concrete;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.alibaba.android.vlayout.LayoutHelper;
 import com.tmall.wireless.tangram.core.protocol.LayoutBinder;

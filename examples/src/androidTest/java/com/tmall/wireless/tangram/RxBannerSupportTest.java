@@ -31,7 +31,7 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.rule.UiThreadTestRule;
 import android.support.test.runner.AndroidJUnit4;
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 import android.test.AndroidTestCase;
 import com.tmall.wireless.tangram.core.service.ServiceManager;
 import com.tmall.wireless.tangram.support.BannerSupport;

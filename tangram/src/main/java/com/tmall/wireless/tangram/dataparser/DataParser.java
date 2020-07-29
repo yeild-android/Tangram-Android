@@ -26,8 +26,8 @@ package com.tmall.wireless.tangram.dataparser;
 
 import java.util.List;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import com.tmall.wireless.tangram.core.service.ServiceManager;
 import com.tmall.wireless.tangram.op.ParseComponentsOp;
 import com.tmall.wireless.tangram.op.ParseGroupsOp;

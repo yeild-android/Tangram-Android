@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram3.support;
 
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 
 import com.tmall.wireless.tangram3.ext.BannerListener;
 

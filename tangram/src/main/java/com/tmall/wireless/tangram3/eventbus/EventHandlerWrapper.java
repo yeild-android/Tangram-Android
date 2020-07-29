@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram3.eventbus;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

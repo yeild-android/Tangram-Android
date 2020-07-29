@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram3.structure.style;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.tmall.wireless.tangram3.dataparser.concrete.Style;
 

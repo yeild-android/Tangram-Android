@@ -24,7 +24,6 @@
 
 package com.tmall.wireless.tangram.support.async;
 
-import android.support.v4.util.Pair;
 import android.util.Log;
 import com.tmall.wireless.tangram.dataparser.concrete.Card;
 import com.tmall.wireless.tangram.op.LoadGroupOp;

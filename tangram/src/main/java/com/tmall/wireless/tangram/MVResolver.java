@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
 

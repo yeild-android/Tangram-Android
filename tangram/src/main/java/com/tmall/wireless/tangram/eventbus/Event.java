@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram.eventbus;
 
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 
 /**
  * Created by longerian on 16/4/26.

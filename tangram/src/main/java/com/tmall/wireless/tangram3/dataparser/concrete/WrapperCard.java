@@ -24,8 +24,8 @@
 
 package com.tmall.wireless.tangram3.dataparser.concrete;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.alibaba.android.vlayout.LayoutHelper;
 import com.alibaba.android.vlayout.layout.RangeGridLayoutHelper;

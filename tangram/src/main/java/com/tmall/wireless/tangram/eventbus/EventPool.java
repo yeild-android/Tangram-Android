@@ -24,8 +24,8 @@
 
 package com.tmall.wireless.tangram.eventbus;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.Pools;
+import androidx.annotation.NonNull;
+import androidx.core.util.Pools;
 
 /**
  * Created by longerian on 16/4/26.

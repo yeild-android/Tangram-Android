@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram.eventbus;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Created by longerian on 16/4/27.

@@ -25,7 +25,7 @@
 package com.tmall.wireless.tangram3.dataparser.concrete;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.alibaba.android.vlayout.VirtualLayoutManager;
 import com.tmall.wireless.tangram3.MVHelper;

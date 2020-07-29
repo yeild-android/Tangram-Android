@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram3.util;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.tmall.wireless.tangram3.TangramBuilder;

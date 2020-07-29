@@ -24,9 +24,10 @@
 
 package com.tmall.wireless.tangram3.support;
 
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.NonNull;
 
 import com.tmall.wireless.tangram3.dataparser.concrete.Card;
 import com.tmall.wireless.tangram3.structure.BaseCell;

@@ -24,8 +24,8 @@
 
 package com.tmall.wireless.tangram3.support;
 
-import android.support.annotation.Keep;
-import android.support.annotation.NonNull;
+import androidx.annotation.Keep;
+import androidx.annotation.NonNull;
 
 import com.tmall.wireless.tangram3.support.HandlerTimer.TimerStatus;
 

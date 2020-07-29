@@ -25,8 +25,8 @@
 package com.tmall.wireless.tangram3;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -468,7 +468,7 @@ public class TangramBuilder {
         }
 
         /**
-         * @return a {@link TangramBuilder} instance to bind {@link android.support.v7.widget.RecyclerView}, data.
+         * @return a {@link TangramBuilder} instance to bind {@link androidx.recyclerview.widget.RecyclerView}, data.
          */
         public TangramEngine build() {
 

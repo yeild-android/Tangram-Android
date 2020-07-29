@@ -31,9 +31,9 @@ import com.tmall.wireless.tangram.eventbus.Event;
 import com.tmall.wireless.tangram.eventbus.EventHandlerWrapper;
 import com.tmall.wireless.tangram.structure.BaseCell;
 
-import android.support.annotation.Keep;
-import android.support.annotation.NonNull;
-import android.support.v4.util.ArrayMap;
+import androidx.annotation.Keep;
+import androidx.annotation.NonNull;
+import androidx.collection.ArrayMap;
 
 import java.util.ArrayList;
 import java.util.HashMap;

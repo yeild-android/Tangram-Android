@@ -33,7 +33,7 @@ import android.support.test.annotation.UiThreadTest;
 import android.support.test.filters.SmallTest;
 import android.support.test.rule.UiThreadTestRule;
 import android.support.test.runner.AndroidJUnit4;
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 import android.test.AndroidTestCase;
 import android.util.Log;
 import android.view.View;

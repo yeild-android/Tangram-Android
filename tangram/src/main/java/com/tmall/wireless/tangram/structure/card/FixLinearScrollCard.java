@@ -29,7 +29,7 @@ import com.alibaba.android.vlayout.layout.ScrollFixLayoutHelper;
 
 import org.json.JSONObject;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * Created by longerian on 16/12/11.

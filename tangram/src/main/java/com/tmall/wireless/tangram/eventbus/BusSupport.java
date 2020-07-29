@@ -26,8 +26,8 @@ package com.tmall.wireless.tangram.eventbus;
 
 import org.json.JSONObject;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.ArrayMap;
+import androidx.annotation.NonNull;
+import androidx.collection.ArrayMap;
 import android.text.TextUtils;
 
 import java.util.ArrayList;

@@ -30,7 +30,7 @@ package com.tmall.wireless.tangram3.util;
  */
 
 import android.os.Looper;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import io.reactivex.Observer;
 

@@ -24,7 +24,7 @@
 
 package com.tmall.wireless.tangram.dataparser.concrete;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.tmall.wireless.tangram.core.protocol.LayoutBinderResolver;
 import com.tmall.wireless.tangram.util.Preconditions;

@@ -24,8 +24,8 @@
 
 package com.tmall.wireless.tangram3.core.protocol;
 
-import android.support.annotation.NonNull;
 import android.view.View;
+import androidx.annotation.NonNull;
 
 /**
  * Created by villadora on 15/12/8.

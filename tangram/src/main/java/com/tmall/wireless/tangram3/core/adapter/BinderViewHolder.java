@@ -24,10 +24,10 @@
 
 package com.tmall.wireless.tangram3.core.adapter;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import com.alibaba.android.vlayout.VirtualLayoutManager;
 import com.tmall.wireless.tangram3.core.protocol.ControlBinder;
 

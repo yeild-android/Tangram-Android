@@ -24,10 +24,10 @@
 
 package com.tmall.wireless.tangram3.eventbus;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
 
+import androidx.annotation.NonNull;
+import androidx.collection.ArrayMap;
 import org.json.JSONObject;
 
 import java.util.ArrayList;

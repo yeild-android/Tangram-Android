@@ -24,9 +24,9 @@
 
 package com.tmall.wireless.tangram3.structure.card;
 
-import android.support.annotation.Keep;
-import android.support.annotation.NonNull;
-import android.support.v4.util.ArrayMap;
+import androidx.annotation.Keep;
+import androidx.annotation.NonNull;
+import androidx.collection.ArrayMap;
 
 import com.tmall.wireless.tangram3.dataparser.concrete.Card;
 import com.tmall.wireless.tangram3.dataparser.concrete.WrapperCard;
